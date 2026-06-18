@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <h1>Réseau local</h1>
+        <p>Affichage des appareils détectés.</p>
+        <button id="refresh-button">Rescan</button>
+        <span id="refresh-countdown">Prochain refresh dans 60s</span>
+        <table id="device-table">
+            <thead>
+                <tr>
+                    <th>MAC</th>
+                    <th>IP</th>
+                    <th>Vendor</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
