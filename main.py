@@ -66,7 +66,7 @@ def main():
         except Exception as err:
             print("Erreur pendant le scan:", err)
 
-        time.sleep(5)
+        time.sleep(10)
 
 
 if __name__ == "__main__":

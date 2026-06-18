@@ -8,20 +8,31 @@
 </head>
 <body>
     <main>
+        <div id="spinner" class="spinner hidden"></div>
         <h1>Réseau local</h1>
         <p>Affichage des appareils détectés.</p>
         <button id="refresh-button">Rescan</button>
-        <span id="refresh-countdown">Prochain refresh dans 60s</span>
-        <table id="device-table">
-            <thead>
-                <tr>
-                    <th>MAC</th>
-                    <th>IP</th>
-                    <th>Vendor</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <span id="refresh-countdown">Prochain refresh dans 5min</span>
+        <div class="container">
+            <div class="table-wrapper">
+                <table id="device-table">
+                    <thead>
+                        <tr>
+                            <th>MAC</th>
+                            <th>IP</th>
+                            <th>Vendor</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="details-panel" class="details-panel hidden">
+                <h3>Résultat Nmap</h3>
+                <button id="close-details">Fermer</button>
+                <pre id="nmap-output"></pre>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
